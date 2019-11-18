@@ -14,20 +14,19 @@ router.get("/", function(req, res) {
 
 router.get("/scrape", function(req, res) {
   request("https://www.nytimes.com", function(error, response, html) {
+
     var $ = cheerio.load(html);
     var titlesArray = [];
 
-    $(".css-2jjhlo").each(function(i, element) {
+    $(".css-6p6lnl").each(function(i, element) {
+
       var result = {};
 
-      result.title = $(this)
-        .children("a")
-        .text();
-      result.link = $(this)
-        .children("a")
-        .attr("href");
+      result.title = $(this).children("a").text();
+      result.link = $(this).children("a").attr("href");
+      result.summary = $(this).children("a").children("p").text();
 
-      if (result.title !== "" && result.link !== "") {
+      if (result.title !== "" && result.link !== "" && result.summary !== "") {
         if (titlesArray.indexOf(result.title) == -1) {
           titlesArray.push(result.title);
 
@@ -39,7 +38,7 @@ router.get("/scrape", function(req, res) {
                 if (err) {
                   console.log(err);
                 } else {
-                  console.log(doc);
+                  //console.log(doc);
                 }
               });
             }

@@ -37,7 +37,7 @@ db.once("open", function() {
   console.log("Connected to Mongoose!");
 });
 
-var routes = require("/controller/controller.js");
+var routes = require("./controller/controller.js");
 app.use("/", routes);
 //Create localhost port
 var port = process.env.PORT || 3000;
