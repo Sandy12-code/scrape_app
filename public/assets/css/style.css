@@ -6,8 +6,19 @@ body {
     min-height: 100vh;
     flex-direction: column;
   }
+
   main {
     flex: 1 0 auto;
+  }
+
+  .nav-wrapper.topnav {
+    background-color: rgb(65, 65, 241);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    
+  }
+  .right {
+    color: rgb(182, 42, 42)
   }
   .articleBody {
     height: 200px;
@@ -15,25 +26,61 @@ body {
     overflow-y: scroll;
     line-height: 150%;
   }
+
+  .card.z-depth-3 {
+    font-size: 40px;
+  
+  }
+
+  .card.y-depth-3 {
+    font-size : 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(139, 41, 41);
+    color: white;
+  }
+
+  #sponsor-wrapper {
+    color: rgb(139, 41, 41);
+    font-size: 20px;
+  }
+
+  #art-font {
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+
+  }
+
+  
   #btnSignUp {
     background-color: #635f60;
   }
+
   #nameComment {
     /*border-bottom: 2px solid #ec407a;*/
     font-weight: bold;
     background: #635f60;
     color: white;
   }
+
   .input-field input[type="text"]:focus + label {
     color: #635f60;
   }
+
   .input-field input[type="text"]:focus {
     border-bottom: 1px solid #635f60;
     box-shadow: 0 1px 0 0 #000;
   }
+
   .input-field .prefix.active {
     color: #635f60;
   }
+
   .topnav {
-    background-color: #635f60;
+    background-color: rgb(65, 65, 241);
+    color: white;
+    font-family:'Kaushan Script', cursive;
+  }
+  #nyt {
+    color:rgb(218, 146, 146);
+    font-family: 'Merriweather', serif;
   }

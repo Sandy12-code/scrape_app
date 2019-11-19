@@ -1,8 +1,8 @@
  <div>
-    <h1 class="card z-depth-3 center-align">Read the Latest from 'The New York Times'</h1>
+    <h1 class="title animated fadeInLeftBig slow card z-depth-3 center-align">Read the Latest from 'The New York Times'</h1>
     <div class="row">
         <div class="col s3"></div>
-        <h5 class="card z-depth-3 center-align col s6">Click 'Scrape' to get the latest articles</h5>
+        <h5 class="title animated fadeInRightBig slow card y-depth-3 center-align col s6">Click 'Scrape' to get the latest articles</h5>
     </div>
 </div>
 <div class="row">
@@ -10,7 +10,7 @@
     <div class="col s8 left-align">
         {{#each article}}
         <div class="card-panel">
-            <h4>{{this.title}}</h4>
+            <h4 id = "art-font">{{this.title}}</h4>
             <a href="/readArticle/{{this._id}}" class="css-llk6mt euiyums4" id="sponsor-wrapper">Read Article</a>
 
         </div>
