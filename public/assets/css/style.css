@@ -50,6 +50,11 @@ body {
 
   }
 
+  #art-save {
+    color: rgb(139, 41, 41);
+    font-size: 20px;
+  }
+
   
   #btnSignUp {
     background-color: #635f60;
@@ -75,11 +80,14 @@ body {
     color: #635f60;
   }
 
-  .topnav {
+  .bottom-nav {
     background-color: rgb(65, 65, 241);
     color: white;
     font-family:'Kaushan Script', cursive;
+    margin-top: 50%;
+    text-align: center;
   }
+
   #nyt {
     color:rgb(218, 146, 146);
     font-family: 'Merriweather', serif;
